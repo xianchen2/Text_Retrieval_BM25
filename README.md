@@ -1,5 +1,5 @@
 
-# BM25 Okapi
+# Okapi BM25 
 A Python implementation of the [BM25](https://en.wikipedia.org/wiki/Okapi_BM25) for file retrieval
 
 # Implementation
