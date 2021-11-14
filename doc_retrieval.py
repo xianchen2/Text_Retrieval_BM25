@@ -182,8 +182,8 @@ class BuildIndex:
 		output: the score for one document
 		'''
 		score = 0
-		for w in self.file_to_terms[filename]:
-			if w not in qlist:
+		for w in qlist:
+			if w not in self.file_to_terms[filename]:
 				continue
 			wc = len(self.invertedIndex[w][filename])
 			score += self.idf[w] * ((wc)* (self.k+1)) / (wc + self.k * 
